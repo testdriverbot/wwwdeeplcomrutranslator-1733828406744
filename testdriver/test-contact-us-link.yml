@@ -1,0 +1,13 @@
+version: 4.1.29
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: hover-text
+        text: DeepL Translate
+        description: browser tab title
+        action: click
+  - prompt: Locate the "Contact Us" link, if available.
+    commands:
+      - command: scroll-until-text
+        text: Contact Us
+        direction: down
