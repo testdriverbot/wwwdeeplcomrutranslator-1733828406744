@@ -1,0 +1,14 @@
+version: 4.1.29
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: >-
+      Locate the language selection dropdown  # Use the content of the file from
+      the environment
+    commands:
+      - command: hover-text
+        text: русский
+        description: language selection dropdown
+        action: click
