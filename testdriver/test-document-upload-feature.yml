@@ -1,0 +1,20 @@
+version: 4.1.29
+steps:
+  - prompt: Focus the browser window.
+    commands: []
+  - prompt: Locate the "Перевести файлы" button.
+    commands:
+      - command: hover-text
+        text: Перевести файлы
+        description: button to translate files
+        action: hover
+  - prompt: Click on the button to upload a document.
+    commands:
+      - command: hover-text
+        text: Перевести файлы
+        description: button to upload a document
+        action: click
+  - prompt: Assert that the upload dialog opens.
+    commands:
+      - command: assert
+        expect: the upload dialog is visible
